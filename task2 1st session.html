@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+             
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            background-color: #f0f0f0;
+        }
+        .calculator {
+            border: 2px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .display {
+            background-color: #333;
+            color: #fff;
+            font-size: 2em;
+            text-align: right;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .buttons {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .buttons td {
+            border: 1px solid #333;
+        }
+        .button {
+            padding: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            cursor: pointer;
+            color: white;
+        }
+        .button.operator {
+            background-color: #f90;
+        }
+        .button.number {
+            background-color: #444;
+        }
+        .button.wide {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <div class="display">0</div>
+    <table class="buttons">
+        <tr>
+            <td class="button number">AC</td>
+            <td class="button number"> / </td>
+            <td class="button number">%</td>
+            <td class="button operator">÷</td>
+        </tr>
+        <tr>
+            <td class="button number">7</td>
+            <td class="button number">8</td>
+            <td class="button number">9</td>
+            <td class="button operator">×</td>
+        </tr>
+        <tr>
+            <td class="button number">4</td>
+            <td class="button number">5</td>
+            <td class="button number">6</td>
+            <td class="button operator">-</td>
+        </tr>
+        <tr>
+            <td class="button number">1</td>
+            <td class="button number">2</td>
+            <td class="button number">3</td>
+            <td class="button operator">+</td>
+        </tr>
+        <tr>
+            <td class="button number">0</td>
+            <td class="button number">.</td>
+            <td class="button operator" colspan="2">=</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
